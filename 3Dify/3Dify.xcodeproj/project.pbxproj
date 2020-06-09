@@ -1,0 +1,961 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB0D3E3723F7DD24002AD13E /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0D3E3623F7DD24002AD13E /* R.generated.swift */; };
+		BB0D3E3A23F7E335002AD13E /* PortraitPhotoPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0D3E3923F7E335002AD13E /* PortraitPhotoPickerViewController.swift */; };
+		BB0D3E3C23F7E341002AD13E /* PortraitPhotoPickerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB0D3E3B23F7E341002AD13E /* PortraitPhotoPickerViewController.storyboard */; };
+		BB0D3E3F23F7F29C002AD13E /* PortraitPhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0D3E3E23F7F29C002AD13E /* PortraitPhotoCollectionViewCell.swift */; };
+		BB0D3E4223F7F323002AD13E /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0D3E4123F7F322002AD13E /* Result.swift */; };
+		BB0D3E4423F7F349002AD13E /* DifyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0D3E4323F7F349002AD13E /* DifyAPI.swift */; };
+		BB0D3E4723F7F399002AD13E /* DifyPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0D3E4623F7F399002AD13E /* DifyPoint.swift */; };
+		BB0D3E4923F7FA64002AD13E /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0D3E4823F7FA64002AD13E /* MainNavigationController.swift */; };
+		BB0D3E4B23F7FA6E002AD13E /* MainNavigationController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB0D3E4A23F7FA6E002AD13E /* MainNavigationController.storyboard */; };
+		BB0D3E4E23F85853002AD13E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0D3E4D23F85853002AD13E /* SceneDelegate.swift */; };
+		BB0D3E5023F87235002AD13E /* PortraitPhotoPickerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0D3E4F23F87235002AD13E /* PortraitPhotoPickerProtocol.swift */; };
+		BB0D3E5323F87452002AD13E /* PHAsset+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0D3E5223F87452002AD13E /* PHAsset+Utils.swift */; };
+		BB0D3E5923F87885002AD13E /* DifyCloudVisualizerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB0D3E5823F87885002AD13E /* DifyCloudVisualizerViewController.storyboard */; };
+		BB0D3E5C23F878D1002AD13E /* DifyCloudVisualizerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0D3E5B23F878D1002AD13E /* DifyCloudVisualizerViewController.swift */; };
+		BB75B66523F87B5C00A13363 /* CGImageSource+Depth.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB75B66423F87B5C00A13363 /* CGImageSource+Depth.swift */; };
+		BB75B66723F87B9C00A13363 /* AVDepthData+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB75B66623F87B9C00A13363 /* AVDepthData+Utils.swift */; };
+		BB75B66923F87C9100A13363 /* CIImage+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB75B66823F87C9100A13363 /* CIImage+Utils.swift */; };
+		BB75B66B23F87D1400A13363 /* DifyPointCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB75B66A23F87D1400A13363 /* DifyPointCloud.swift */; };
+		BB85347A23F90BA400D6C43A /* UIImage+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB85347923F90BA400D6C43A /* UIImage+Utils.swift */; };
+		BB85347C23F90C0F00D6C43A /* CVPixelBuffer+CIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB85347B23F90C0F00D6C43A /* CVPixelBuffer+CIImage.swift */; };
+		BB92683523F9460900D910E3 /* StoredModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB92683423F9460900D910E3 /* StoredModels.swift */; };
+		BB92684523F9502B00D910E3 /* IBMPlexSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BB92683B23F9500D00D910E3 /* IBMPlexSans-Bold.ttf */; };
+		BB92684623F9502B00D910E3 /* IBMPlexSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BB92683D23F9500D00D910E3 /* IBMPlexSans-BoldItalic.ttf */; };
+		BB92684723F9502B00D910E3 /* IBMPlexSans-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BB92683623F9500D00D910E3 /* IBMPlexSans-ExtraLight.ttf */; };
+		BB92684823F9502B00D910E3 /* IBMPlexSans-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BB92683823F9500D00D910E3 /* IBMPlexSans-ExtraLightItalic.ttf */; };
+		BB92684923F9502B00D910E3 /* IBMPlexSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BB92684223F9500E00D910E3 /* IBMPlexSans-Italic.ttf */; };
+		BB92684A23F9502B00D910E3 /* IBMPlexSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BB92684023F9500D00D910E3 /* IBMPlexSans-Light.ttf */; };
+		BB92684B23F9502B00D910E3 /* IBMPlexSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BB92684323F9500E00D910E3 /* IBMPlexSans-LightItalic.ttf */; };
+		BB92684C23F9502B00D910E3 /* IBMPlexSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BB92683C23F9500D00D910E3 /* IBMPlexSans-Medium.ttf */; };
+		BB92684D23F9502B00D910E3 /* IBMPlexSans-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BB92684123F9500E00D910E3 /* IBMPlexSans-MediumItalic.ttf */; };
+		BB92684E23F9502B00D910E3 /* IBMPlexSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BB92683E23F9500D00D910E3 /* IBMPlexSans-Regular.ttf */; };
+		BB92684F23F9502B00D910E3 /* IBMPlexSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BB92683A23F9500D00D910E3 /* IBMPlexSans-SemiBold.ttf */; };
+		BB92685023F9502B00D910E3 /* IBMPlexSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BB92683F23F9500D00D910E3 /* IBMPlexSans-SemiBoldItalic.ttf */; };
+		BB92685123F9502B00D910E3 /* IBMPlexSans-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BB92683923F9500D00D910E3 /* IBMPlexSans-Thin.ttf */; };
+		BB92685223F9502B00D910E3 /* IBMPlexSans-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BB92683723F9500D00D910E3 /* IBMPlexSans-ThinItalic.ttf */; };
+		BBB355E123F95303000428E7 /* UILabel+Kerning.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB355E023F95303000428E7 /* UILabel+Kerning.swift */; };
+		BBB355E323F95562000428E7 /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB355E223F95562000428E7 /* UIViewController+Utils.swift */; };
+		BBB355E523F9700A000428E7 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB355E423F9700A000428E7 /* DataStore.swift */; };
+		BBB355EA23F98EEB000428E7 /* MergeRotationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB355E923F98EEB000428E7 /* MergeRotationViewController.swift */; };
+		BBB355EC23F98F00000428E7 /* MergeRotationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBB355EB23F98F00000428E7 /* MergeRotationViewController.storyboard */; };
+		BBB355EE23F98F0D000428E7 /* MergeTransformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB355ED23F98F0D000428E7 /* MergeTransformationViewController.swift */; };
+		BBB355F023F98F1A000428E7 /* MergeTransformationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBB355EF23F98F1A000428E7 /* MergeTransformationViewController.storyboard */; };
+		BBB8038A23F9374200228A40 /* PointCloudEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB8038923F9374200228A40 /* PointCloudEditorViewController.swift */; };
+		BBB8038C23F9375400228A40 /* PointCloudEditorViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBB8038B23F9375400228A40 /* PointCloudEditorViewController.storyboard */; };
+		BBB8038F23F93F5D00228A40 /* MainPortraitCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB8038E23F93F5D00228A40 /* MainPortraitCollectionViewCell.swift */; };
+		BBBF081123F7D99600E177DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBF081023F7D99600E177DF /* AppDelegate.swift */; };
+		BBBF081523F7D99600E177DF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBF081423F7D99600E177DF /* MainViewController.swift */; };
+		BBBF081823F7D99600E177DF /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBBF081623F7D99600E177DF /* MainViewController.storyboard */; };
+		BBBF081A23F7D99800E177DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBBF081923F7D99800E177DF /* Assets.xcassets */; };
+		BBBF081D23F7D99800E177DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBBF081B23F7D99800E177DF /* LaunchScreen.storyboard */; };
+		BBBF082823F7D99800E177DF /* _DifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBF082723F7D99800E177DF /* _DifyTests.swift */; };
+		BBBF083323F7D99800E177DF /* _DifyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBF083223F7D99800E177DF /* _DifyUITests.swift */; };
+		E032B25CEF5EB457D4CF2EBA /* Pods_3Dify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0DC16568E858D44160AAF44 /* Pods_3Dify.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BBBF082423F7D99800E177DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BBBF080523F7D99600E177DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BBBF080C23F7D99600E177DF;
+			remoteInfo = 3Dify;
+		};
+		BBBF082F23F7D99800E177DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BBBF080523F7D99600E177DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BBBF080C23F7D99600E177DF;
+			remoteInfo = 3Dify;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A0DC16568E858D44160AAF44 /* Pods_3Dify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_3Dify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB0D3E3623F7DD24002AD13E /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		BB0D3E3923F7E335002AD13E /* PortraitPhotoPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortraitPhotoPickerViewController.swift; sourceTree = "<group>"; };
+		BB0D3E3B23F7E341002AD13E /* PortraitPhotoPickerViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PortraitPhotoPickerViewController.storyboard; sourceTree = "<group>"; };
+		BB0D3E3E23F7F29C002AD13E /* PortraitPhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortraitPhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		BB0D3E4123F7F322002AD13E /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		BB0D3E4323F7F349002AD13E /* DifyAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifyAPI.swift; sourceTree = "<group>"; };
+		BB0D3E4623F7F399002AD13E /* DifyPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifyPoint.swift; sourceTree = "<group>"; };
+		BB0D3E4823F7FA64002AD13E /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		BB0D3E4A23F7FA6E002AD13E /* MainNavigationController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainNavigationController.storyboard; sourceTree = "<group>"; };
+		BB0D3E4D23F85853002AD13E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BB0D3E4F23F87235002AD13E /* PortraitPhotoPickerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortraitPhotoPickerProtocol.swift; sourceTree = "<group>"; };
+		BB0D3E5223F87452002AD13E /* PHAsset+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PHAsset+Utils.swift"; sourceTree = "<group>"; };
+		BB0D3E5823F87885002AD13E /* DifyCloudVisualizerViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DifyCloudVisualizerViewController.storyboard; sourceTree = "<group>"; };
+		BB0D3E5B23F878D1002AD13E /* DifyCloudVisualizerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DifyCloudVisualizerViewController.swift; sourceTree = "<group>"; };
+		BB75B66423F87B5C00A13363 /* CGImageSource+Depth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGImageSource+Depth.swift"; sourceTree = "<group>"; };
+		BB75B66623F87B9C00A13363 /* AVDepthData+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVDepthData+Utils.swift"; sourceTree = "<group>"; };
+		BB75B66823F87C9100A13363 /* CIImage+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CIImage+Utils.swift"; sourceTree = "<group>"; };
+		BB75B66A23F87D1400A13363 /* DifyPointCloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifyPointCloud.swift; sourceTree = "<group>"; };
+		BB85347923F90BA400D6C43A /* UIImage+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Utils.swift"; sourceTree = "<group>"; };
+		BB85347B23F90C0F00D6C43A /* CVPixelBuffer+CIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CVPixelBuffer+CIImage.swift"; sourceTree = "<group>"; };
+		BB92683423F9460900D910E3 /* StoredModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoredModels.swift; sourceTree = "<group>"; };
+		BB92683623F9500D00D910E3 /* IBMPlexSans-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-ExtraLight.ttf"; sourceTree = "<group>"; };
+		BB92683723F9500D00D910E3 /* IBMPlexSans-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-ThinItalic.ttf"; sourceTree = "<group>"; };
+		BB92683823F9500D00D910E3 /* IBMPlexSans-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		BB92683923F9500D00D910E3 /* IBMPlexSans-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-Thin.ttf"; sourceTree = "<group>"; };
+		BB92683A23F9500D00D910E3 /* IBMPlexSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		BB92683B23F9500D00D910E3 /* IBMPlexSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-Bold.ttf"; sourceTree = "<group>"; };
+		BB92683C23F9500D00D910E3 /* IBMPlexSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-Medium.ttf"; sourceTree = "<group>"; };
+		BB92683D23F9500D00D910E3 /* IBMPlexSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		BB92683E23F9500D00D910E3 /* IBMPlexSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-Regular.ttf"; sourceTree = "<group>"; };
+		BB92683F23F9500D00D910E3 /* IBMPlexSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		BB92684023F9500D00D910E3 /* IBMPlexSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-Light.ttf"; sourceTree = "<group>"; };
+		BB92684123F9500E00D910E3 /* IBMPlexSans-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-MediumItalic.ttf"; sourceTree = "<group>"; };
+		BB92684223F9500E00D910E3 /* IBMPlexSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-Italic.ttf"; sourceTree = "<group>"; };
+		BB92684323F9500E00D910E3 /* IBMPlexSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		BBB355E023F95303000428E7 /* UILabel+Kerning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Kerning.swift"; sourceTree = "<group>"; };
+		BBB355E223F95562000428E7 /* UIViewController+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utils.swift"; sourceTree = "<group>"; };
+		BBB355E423F9700A000428E7 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		BBB355E923F98EEB000428E7 /* MergeRotationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MergeRotationViewController.swift; sourceTree = "<group>"; };
+		BBB355EB23F98F00000428E7 /* MergeRotationViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MergeRotationViewController.storyboard; sourceTree = "<group>"; };
+		BBB355ED23F98F0D000428E7 /* MergeTransformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeTransformationViewController.swift; sourceTree = "<group>"; };
+		BBB355EF23F98F1A000428E7 /* MergeTransformationViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MergeTransformationViewController.storyboard; sourceTree = "<group>"; };
+		BBB8038923F9374200228A40 /* PointCloudEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointCloudEditorViewController.swift; sourceTree = "<group>"; };
+		BBB8038B23F9375400228A40 /* PointCloudEditorViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PointCloudEditorViewController.storyboard; sourceTree = "<group>"; };
+		BBB8038E23F93F5D00228A40 /* MainPortraitCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPortraitCollectionViewCell.swift; sourceTree = "<group>"; };
+		BBBF080D23F7D99600E177DF /* 3Dify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 3Dify.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBBF081023F7D99600E177DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BBBF081423F7D99600E177DF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		BBBF081723F7D99600E177DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainViewController.storyboard; sourceTree = "<group>"; };
+		BBBF081923F7D99800E177DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BBBF081C23F7D99800E177DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BBBF081E23F7D99800E177DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBBF082323F7D99800E177DF /* 3DifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 3DifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBBF082723F7D99800E177DF /* _DifyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _DifyTests.swift; sourceTree = "<group>"; };
+		BBBF082923F7D99800E177DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBBF082E23F7D99800E177DF /* 3DifyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 3DifyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBBF083223F7D99800E177DF /* _DifyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _DifyUITests.swift; sourceTree = "<group>"; };
+		BBBF083423F7D99800E177DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3DEDF51F338BF208C3F48B8 /* Pods-3Dify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-3Dify.release.xcconfig"; path = "Target Support Files/Pods-3Dify/Pods-3Dify.release.xcconfig"; sourceTree = "<group>"; };
+		FB4E6C96D52A6E22147EAECA /* Pods-3Dify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-3Dify.debug.xcconfig"; path = "Target Support Files/Pods-3Dify/Pods-3Dify.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BBBF080A23F7D99600E177DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E032B25CEF5EB457D4CF2EBA /* Pods_3Dify.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBBF082023F7D99800E177DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBBF082B23F7D99800E177DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6D7D04EC63D5A0C16D596F71 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FB4E6C96D52A6E22147EAECA /* Pods-3Dify.debug.xcconfig */,
+				D3DEDF51F338BF208C3F48B8 /* Pods-3Dify.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A55D6B249BFD136A9E093B05 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0DC16568E858D44160AAF44 /* Pods_3Dify.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB0D3E3823F7E215002AD13E /* Main View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BBBF081423F7D99600E177DF /* MainViewController.swift */,
+				BBBF081623F7D99600E177DF /* MainViewController.storyboard */,
+				BBB8038E23F93F5D00228A40 /* MainPortraitCollectionViewCell.swift */,
+			);
+			path = "Main View Controller";
+			sourceTree = "<group>";
+		};
+		BB0D3E3D23F7E345002AD13E /* Portrait Photo Picker */ = {
+			isa = PBXGroup;
+			children = (
+				BB0D3E4F23F87235002AD13E /* PortraitPhotoPickerProtocol.swift */,
+				BB0D3E3923F7E335002AD13E /* PortraitPhotoPickerViewController.swift */,
+				BB0D3E3B23F7E341002AD13E /* PortraitPhotoPickerViewController.storyboard */,
+				BB0D3E3E23F7F29C002AD13E /* PortraitPhotoCollectionViewCell.swift */,
+			);
+			path = "Portrait Photo Picker";
+			sourceTree = "<group>";
+		};
+		BB0D3E4023F7F313002AD13E /*  Networking */ = {
+			isa = PBXGroup;
+			children = (
+				BB0D3E4123F7F322002AD13E /* Result.swift */,
+				BB0D3E4323F7F349002AD13E /* DifyAPI.swift */,
+			);
+			path = " Networking";
+			sourceTree = "<group>";
+		};
+		BB0D3E4523F7F389002AD13E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BB0D3E4623F7F399002AD13E /* DifyPoint.swift */,
+				BB75B66A23F87D1400A13363 /* DifyPointCloud.swift */,
+				BB92683423F9460900D910E3 /* StoredModels.swift */,
+				BBB355E423F9700A000428E7 /* DataStore.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BB0D3E4C23F7FB08002AD13E /* Main Nav VC */ = {
+			isa = PBXGroup;
+			children = (
+				BB0D3E4823F7FA64002AD13E /* MainNavigationController.swift */,
+				BB0D3E4A23F7FA6E002AD13E /* MainNavigationController.storyboard */,
+			);
+			path = "Main Nav VC";
+			sourceTree = "<group>";
+		};
+		BB0D3E5123F87447002AD13E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BB0D3E5223F87452002AD13E /* PHAsset+Utils.swift */,
+				BB85347B23F90C0F00D6C43A /* CVPixelBuffer+CIImage.swift */,
+				BB75B66423F87B5C00A13363 /* CGImageSource+Depth.swift */,
+				BB75B66623F87B9C00A13363 /* AVDepthData+Utils.swift */,
+				BB75B66823F87C9100A13363 /* CIImage+Utils.swift */,
+				BB85347923F90BA400D6C43A /* UIImage+Utils.swift */,
+				BBB355E023F95303000428E7 /* UILabel+Kerning.swift */,
+				BBB355E223F95562000428E7 /* UIViewController+Utils.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BB0D3E5A23F87889002AD13E /* Dify Cloud Visualizer */ = {
+			isa = PBXGroup;
+			children = (
+				BB0D3E5B23F878D1002AD13E /* DifyCloudVisualizerViewController.swift */,
+				BB0D3E5823F87885002AD13E /* DifyCloudVisualizerViewController.storyboard */,
+			);
+			path = "Dify Cloud Visualizer";
+			sourceTree = "<group>";
+		};
+		BB92684423F9501000D910E3 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				BB92683B23F9500D00D910E3 /* IBMPlexSans-Bold.ttf */,
+				BB92683D23F9500D00D910E3 /* IBMPlexSans-BoldItalic.ttf */,
+				BB92683623F9500D00D910E3 /* IBMPlexSans-ExtraLight.ttf */,
+				BB92683823F9500D00D910E3 /* IBMPlexSans-ExtraLightItalic.ttf */,
+				BB92684223F9500E00D910E3 /* IBMPlexSans-Italic.ttf */,
+				BB92684023F9500D00D910E3 /* IBMPlexSans-Light.ttf */,
+				BB92684323F9500E00D910E3 /* IBMPlexSans-LightItalic.ttf */,
+				BB92683C23F9500D00D910E3 /* IBMPlexSans-Medium.ttf */,
+				BB92684123F9500E00D910E3 /* IBMPlexSans-MediumItalic.ttf */,
+				BB92683E23F9500D00D910E3 /* IBMPlexSans-Regular.ttf */,
+				BB92683A23F9500D00D910E3 /* IBMPlexSans-SemiBold.ttf */,
+				BB92683F23F9500D00D910E3 /* IBMPlexSans-SemiBoldItalic.ttf */,
+				BB92683923F9500D00D910E3 /* IBMPlexSans-Thin.ttf */,
+				BB92683723F9500D00D910E3 /* IBMPlexSans-ThinItalic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		BBB355E823F98ED4000428E7 /* Merge */ = {
+			isa = PBXGroup;
+			children = (
+				BBB355E923F98EEB000428E7 /* MergeRotationViewController.swift */,
+				BBB355EB23F98F00000428E7 /* MergeRotationViewController.storyboard */,
+				BBB355ED23F98F0D000428E7 /* MergeTransformationViewController.swift */,
+				BBB355EF23F98F1A000428E7 /* MergeTransformationViewController.storyboard */,
+			);
+			path = Merge;
+			sourceTree = "<group>";
+		};
+		BBB8038D23F9375800228A40 /* Point Cloud Editor */ = {
+			isa = PBXGroup;
+			children = (
+				BBB8038923F9374200228A40 /* PointCloudEditorViewController.swift */,
+				BBB8038B23F9375400228A40 /* PointCloudEditorViewController.storyboard */,
+			);
+			path = "Point Cloud Editor";
+			sourceTree = "<group>";
+		};
+		BBBF080423F7D99600E177DF = {
+			isa = PBXGroup;
+			children = (
+				BB0D3E3623F7DD24002AD13E /* R.generated.swift */,
+				BBBF080F23F7D99600E177DF /* 3Dify */,
+				BBBF082623F7D99800E177DF /* 3DifyTests */,
+				BBBF083123F7D99800E177DF /* 3DifyUITests */,
+				BBBF080E23F7D99600E177DF /* Products */,
+				6D7D04EC63D5A0C16D596F71 /* Pods */,
+				A55D6B249BFD136A9E093B05 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BBBF080E23F7D99600E177DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BBBF080D23F7D99600E177DF /* 3Dify.app */,
+				BBBF082323F7D99800E177DF /* 3DifyTests.xctest */,
+				BBBF082E23F7D99800E177DF /* 3DifyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BBBF080F23F7D99600E177DF /* 3Dify */ = {
+			isa = PBXGroup;
+			children = (
+				BBBF081023F7D99600E177DF /* AppDelegate.swift */,
+				BB0D3E4D23F85853002AD13E /* SceneDelegate.swift */,
+				BB0D3E5123F87447002AD13E /* Extensions */,
+				BB0D3E4523F7F389002AD13E /* Model */,
+				BB0D3E5A23F87889002AD13E /* Dify Cloud Visualizer */,
+				BBB8038D23F9375800228A40 /* Point Cloud Editor */,
+				BB0D3E4023F7F313002AD13E /*  Networking */,
+				BB0D3E3823F7E215002AD13E /* Main View Controller */,
+				BBB355E823F98ED4000428E7 /* Merge */,
+				BB0D3E4C23F7FB08002AD13E /* Main Nav VC */,
+				BB0D3E3D23F7E345002AD13E /* Portrait Photo Picker */,
+				BB92684423F9501000D910E3 /* Fonts */,
+				BBBF081923F7D99800E177DF /* Assets.xcassets */,
+				BBBF081B23F7D99800E177DF /* LaunchScreen.storyboard */,
+				BBBF081E23F7D99800E177DF /* Info.plist */,
+			);
+			path = 3Dify;
+			sourceTree = "<group>";
+		};
+		BBBF082623F7D99800E177DF /* 3DifyTests */ = {
+			isa = PBXGroup;
+			children = (
+				BBBF082723F7D99800E177DF /* _DifyTests.swift */,
+				BBBF082923F7D99800E177DF /* Info.plist */,
+			);
+			path = 3DifyTests;
+			sourceTree = "<group>";
+		};
+		BBBF083123F7D99800E177DF /* 3DifyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BBBF083223F7D99800E177DF /* _DifyUITests.swift */,
+				BBBF083423F7D99800E177DF /* Info.plist */,
+			);
+			path = 3DifyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BBBF080C23F7D99600E177DF /* 3Dify */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBBF083723F7D99800E177DF /* Build configuration list for PBXNativeTarget "3Dify" */;
+			buildPhases = (
+				0A786BD23E762DDBC7C702E2 /* [CP] Check Pods Manifest.lock */,
+				BB0D3E3523F7DC7D002AD13E /* ShellScript */,
+				BBBF080923F7D99600E177DF /* Sources */,
+				BBBF080A23F7D99600E177DF /* Frameworks */,
+				BBBF080B23F7D99600E177DF /* Resources */,
+				BB0D3E3423F7DC51002AD13E /* ShellScript */,
+				AB211FDA92BDB313C1FCBD0C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 3Dify;
+			productName = 3Dify;
+			productReference = BBBF080D23F7D99600E177DF /* 3Dify.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BBBF082223F7D99800E177DF /* 3DifyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBBF083A23F7D99800E177DF /* Build configuration list for PBXNativeTarget "3DifyTests" */;
+			buildPhases = (
+				BBBF081F23F7D99800E177DF /* Sources */,
+				BBBF082023F7D99800E177DF /* Frameworks */,
+				BBBF082123F7D99800E177DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BBBF082523F7D99800E177DF /* PBXTargetDependency */,
+			);
+			name = 3DifyTests;
+			productName = 3DifyTests;
+			productReference = BBBF082323F7D99800E177DF /* 3DifyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BBBF082D23F7D99800E177DF /* 3DifyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBBF083D23F7D99800E177DF /* Build configuration list for PBXNativeTarget "3DifyUITests" */;
+			buildPhases = (
+				BBBF082A23F7D99800E177DF /* Sources */,
+				BBBF082B23F7D99800E177DF /* Frameworks */,
+				BBBF082C23F7D99800E177DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BBBF083023F7D99800E177DF /* PBXTargetDependency */,
+			);
+			name = 3DifyUITests;
+			productName = 3DifyUITests;
+			productReference = BBBF082E23F7D99800E177DF /* 3DifyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BBBF080523F7D99600E177DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Avery Lamp";
+				TargetAttributes = {
+					BBBF080C23F7D99600E177DF = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					BBBF082223F7D99800E177DF = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = BBBF080C23F7D99600E177DF;
+					};
+					BBBF082D23F7D99800E177DF = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = BBBF080C23F7D99600E177DF;
+					};
+				};
+			};
+			buildConfigurationList = BBBF080823F7D99600E177DF /* Build configuration list for PBXProject "3Dify" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BBBF080423F7D99600E177DF;
+			productRefGroup = BBBF080E23F7D99600E177DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BBBF080C23F7D99600E177DF /* 3Dify */,
+				BBBF082223F7D99800E177DF /* 3DifyTests */,
+				BBBF082D23F7D99800E177DF /* 3DifyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BBBF080B23F7D99600E177DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB92684E23F9502B00D910E3 /* IBMPlexSans-Regular.ttf in Resources */,
+				BB92684623F9502B00D910E3 /* IBMPlexSans-BoldItalic.ttf in Resources */,
+				BBB355EC23F98F00000428E7 /* MergeRotationViewController.storyboard in Resources */,
+				BB92684723F9502B00D910E3 /* IBMPlexSans-ExtraLight.ttf in Resources */,
+				BB92685223F9502B00D910E3 /* IBMPlexSans-ThinItalic.ttf in Resources */,
+				BB92684D23F9502B00D910E3 /* IBMPlexSans-MediumItalic.ttf in Resources */,
+				BB92684B23F9502B00D910E3 /* IBMPlexSans-LightItalic.ttf in Resources */,
+				BBBF081D23F7D99800E177DF /* LaunchScreen.storyboard in Resources */,
+				BBB355F023F98F1A000428E7 /* MergeTransformationViewController.storyboard in Resources */,
+				BB92684923F9502B00D910E3 /* IBMPlexSans-Italic.ttf in Resources */,
+				BB92684823F9502B00D910E3 /* IBMPlexSans-ExtraLightItalic.ttf in Resources */,
+				BBBF081A23F7D99800E177DF /* Assets.xcassets in Resources */,
+				BB92685023F9502B00D910E3 /* IBMPlexSans-SemiBoldItalic.ttf in Resources */,
+				BB92685123F9502B00D910E3 /* IBMPlexSans-Thin.ttf in Resources */,
+				BB0D3E4B23F7FA6E002AD13E /* MainNavigationController.storyboard in Resources */,
+				BB92684F23F9502B00D910E3 /* IBMPlexSans-SemiBold.ttf in Resources */,
+				BBB8038C23F9375400228A40 /* PointCloudEditorViewController.storyboard in Resources */,
+				BB92684C23F9502B00D910E3 /* IBMPlexSans-Medium.ttf in Resources */,
+				BB92684523F9502B00D910E3 /* IBMPlexSans-Bold.ttf in Resources */,
+				BBBF081823F7D99600E177DF /* MainViewController.storyboard in Resources */,
+				BB0D3E3C23F7E341002AD13E /* PortraitPhotoPickerViewController.storyboard in Resources */,
+				BB92684A23F9502B00D910E3 /* IBMPlexSans-Light.ttf in Resources */,
+				BB0D3E5923F87885002AD13E /* DifyCloudVisualizerViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBBF082123F7D99800E177DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBBF082C23F7D99800E177DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A786BD23E762DDBC7C702E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-3Dify-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB211FDA92BDB313C1FCBD0C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-3Dify/Pods-3Dify-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-3Dify/Pods-3Dify-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-3Dify/Pods-3Dify-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB0D3E3423F7DC51002AD13E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint autocorrect .\nswiftlint lint .\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		BB0D3E3523F7DC7D002AD13E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BBBF080923F7D99600E177DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB0D3E4923F7FA64002AD13E /* MainNavigationController.swift in Sources */,
+				BBB355EA23F98EEB000428E7 /* MergeRotationViewController.swift in Sources */,
+				BB75B66B23F87D1400A13363 /* DifyPointCloud.swift in Sources */,
+				BBB8038A23F9374200228A40 /* PointCloudEditorViewController.swift in Sources */,
+				BB0D3E3F23F7F29C002AD13E /* PortraitPhotoCollectionViewCell.swift in Sources */,
+				BB0D3E5023F87235002AD13E /* PortraitPhotoPickerProtocol.swift in Sources */,
+				BB0D3E5C23F878D1002AD13E /* DifyCloudVisualizerViewController.swift in Sources */,
+				BB0D3E3A23F7E335002AD13E /* PortraitPhotoPickerViewController.swift in Sources */,
+				BB0D3E4423F7F349002AD13E /* DifyAPI.swift in Sources */,
+				BBB355E323F95562000428E7 /* UIViewController+Utils.swift in Sources */,
+				BBBF081523F7D99600E177DF /* MainViewController.swift in Sources */,
+				BB85347C23F90C0F00D6C43A /* CVPixelBuffer+CIImage.swift in Sources */,
+				BB0D3E5323F87452002AD13E /* PHAsset+Utils.swift in Sources */,
+				BBB355E123F95303000428E7 /* UILabel+Kerning.swift in Sources */,
+				BBB355E523F9700A000428E7 /* DataStore.swift in Sources */,
+				BB0D3E4E23F85853002AD13E /* SceneDelegate.swift in Sources */,
+				BB75B66923F87C9100A13363 /* CIImage+Utils.swift in Sources */,
+				BB85347A23F90BA400D6C43A /* UIImage+Utils.swift in Sources */,
+				BBB355EE23F98F0D000428E7 /* MergeTransformationViewController.swift in Sources */,
+				BBBF081123F7D99600E177DF /* AppDelegate.swift in Sources */,
+				BBB8038F23F93F5D00228A40 /* MainPortraitCollectionViewCell.swift in Sources */,
+				BB75B66523F87B5C00A13363 /* CGImageSource+Depth.swift in Sources */,
+				BB0D3E4223F7F323002AD13E /* Result.swift in Sources */,
+				BB0D3E4723F7F399002AD13E /* DifyPoint.swift in Sources */,
+				BB75B66723F87B9C00A13363 /* AVDepthData+Utils.swift in Sources */,
+				BB92683523F9460900D910E3 /* StoredModels.swift in Sources */,
+				BB0D3E3723F7DD24002AD13E /* R.generated.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBBF081F23F7D99800E177DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBBF082823F7D99800E177DF /* _DifyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBBF082A23F7D99800E177DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBBF083323F7D99800E177DF /* _DifyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BBBF082523F7D99800E177DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BBBF080C23F7D99600E177DF /* 3Dify */;
+			targetProxy = BBBF082423F7D99800E177DF /* PBXContainerItemProxy */;
+		};
+		BBBF083023F7D99800E177DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BBBF080C23F7D99600E177DF /* 3Dify */;
+			targetProxy = BBBF082F23F7D99800E177DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BBBF081623F7D99600E177DF /* MainViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BBBF081723F7D99600E177DF /* Base */,
+			);
+			name = MainViewController.storyboard;
+			sourceTree = "<group>";
+		};
+		BBBF081B23F7D99800E177DF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BBBF081C23F7D99800E177DF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BBBF083523F7D99800E177DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BBBF083623F7D99800E177DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BBBF083823F7D99800E177DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB4E6C96D52A6E22147EAECA /* Pods-3Dify.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R4DQ2L3FBV;
+				INFOPLIST_FILE = 3Dify/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.averylamp.-Dify";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		BBBF083923F7D99800E177DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3DEDF51F338BF208C3F48B8 /* Pods-3Dify.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R4DQ2L3FBV;
+				INFOPLIST_FILE = 3Dify/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.averylamp.-Dify";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		BBBF083B23F7D99800E177DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R4DQ2L3FBV;
+				INFOPLIST_FILE = 3DifyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.averylamp.-DifyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/3Dify.app/3Dify";
+			};
+			name = Debug;
+		};
+		BBBF083C23F7D99800E177DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R4DQ2L3FBV;
+				INFOPLIST_FILE = 3DifyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.averylamp.-DifyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/3Dify.app/3Dify";
+			};
+			name = Release;
+		};
+		BBBF083E23F7D99800E177DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R4DQ2L3FBV;
+				INFOPLIST_FILE = 3DifyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.averylamp.-DifyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = 3Dify;
+			};
+			name = Debug;
+		};
+		BBBF083F23F7D99800E177DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R4DQ2L3FBV;
+				INFOPLIST_FILE = 3DifyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.averylamp.-DifyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = 3Dify;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BBBF080823F7D99600E177DF /* Build configuration list for PBXProject "3Dify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBBF083523F7D99800E177DF /* Debug */,
+				BBBF083623F7D99800E177DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBBF083723F7D99800E177DF /* Build configuration list for PBXNativeTarget "3Dify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBBF083823F7D99800E177DF /* Debug */,
+				BBBF083923F7D99800E177DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBBF083A23F7D99800E177DF /* Build configuration list for PBXNativeTarget "3DifyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBBF083B23F7D99800E177DF /* Debug */,
+				BBBF083C23F7D99800E177DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBBF083D23F7D99800E177DF /* Build configuration list for PBXNativeTarget "3DifyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBBF083E23F7D99800E177DF /* Debug */,
+				BBBF083F23F7D99800E177DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BBBF080523F7D99600E177DF /* Project object */;
+}
